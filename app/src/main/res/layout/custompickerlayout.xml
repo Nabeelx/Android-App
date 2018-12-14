@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_gallery" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GALLERY"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/overlay" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gallery"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:id="@+id/camera">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_camera" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAMERA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/overlay"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

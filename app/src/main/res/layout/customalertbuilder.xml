@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:id="@+id/instructions_view" >
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father Name"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="7dp"/>
+
+        <EditText
+       android:id="@+id/cnic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNIC"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_keyboard_black_24dp"
+            android:drawablePadding="7dp"/>
+
+
+        <EditText
+            android:id="@+id/designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Designation"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_bookmark_black_24dp"
+            android:drawablePadding="7dp"/>
+
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_business_black_24dp"
+            android:drawablePadding="7dp"/>
+
+
+        <EditText
+            android:id="@+id/section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Section"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_image_aspect_ratio_black_24dp"
+            android:drawablePadding="7dp"/>
+
+        <EditText
+            android:id="@+id/postalAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postal Address"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+            android:drawablePadding="7dp"/>
+
+        <!--<EditText
+            android:id="@+id/TextView022"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postal Address"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="7dp"/>-->
+
+
+        <EditText
+            android:id="@+id/ice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ICE Number"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_dock_black_24dp"
+            android:drawablePadding="7dp"/>
+
+
+
+        <EditText
+            android:id="@+id/ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reference"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_rate_review_black_24dp"
+            android:drawablePadding="7dp"/>
+
+
+        <EditText
+            android:id="@+id/willpoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Will Point"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_comment_black_24dp"
+            android:drawablePadding="7dp"/>
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reason"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_mode_comment_black_24dp"
+            android:drawablePadding="7dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

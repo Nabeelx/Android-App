@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-vision-common-license-12.0.1">
+    <CLASSES>
+      <root url="file://E:/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/a5614f19d0ac3deffd1693ae193b02b0/res" />
+      <root url="jar://E:/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-12.0.1.aar/a5614f19d0ac3deffd1693ae193b02b0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

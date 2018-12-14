@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddUserFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/start"
+        android:layout_marginTop="10dp"
+        android:contentDescription="TODO" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/black_overlay"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/logo"/>
+
+
+    <FrameLayout
+        android:id="@+id/SpinnerframeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/divider">
+
+        <Spinner
+            android:id="@+id/userRoleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dialog"
+            android:background="@drawable/box_shape"
+            style="@style/Base.Widget.AppCompat.ListView.DropDown"/>
+
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/roleSpinnerImage"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:contentDescription="TODO"/>
+    </FrameLayout>
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/addDonorLayout"
+     android:layout_below="@id/SpinnerframeLayout"
+     android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/logo">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FFF"
+                android:hint="@string/name"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_margin="10dp"
+            >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_text_format_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FFF"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/textInputLayout2">
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FFF"
+                android:inputType="phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lastDonationtextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/lstDonation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_event_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FFF"
+                android:hint="Last Donation Date"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <FrameLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/textInputLayout3">
+            <!--
+
+                <EditText
+                    android:id="@+id/bloodgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"
+                    android:drawableLeft="@drawable/ic_local_hospital_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#FFF"
+                    android:inputType="text"/>-->
+
+            <Spinner
+                android:id="@+id/addBloodGSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/box_shape"
+                style="@style/Base.Widget.AppCompat.ListView.DropDown"/>
+
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/imageView_personalInfo_addImage"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:contentDescription="TODO"/>
+        </FrameLayout>
+
+
+        <!---->
+        <Button
+            android:id="@+id/addDonor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#ed1c24"
+            android:text="Add User"
+            android:textColor="#FFF"
+           />
+    </LinearLayout>
+
+
+ </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addMemberLayout"
+        android:layout_below="@id/SpinnerframeLayout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/MembertextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/logo">
+
+                <EditText
+                    android:id="@+id/addMembername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#FFF"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/MembertextInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/addMemberemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_text_format_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#FFF"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/MembertextInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/textInputLayout2">
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lastDonationMembertextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/MemberlstDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_event_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#FFF"
+                    android:hint="@string/last_donation_date"
+                    android:inputType="textPersonName"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <FrameLayout
+                android:id="@+id/MembertextInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/textInputLayout3">
+                <!--
+
+                    <EditText
+                        android:id="@+id/bloodgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Blood Group"
+                        android:drawableLeft="@drawable/ic_local_hospital_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#FFF"
+                        android:inputType="text"/>-->
+
+                <Spinner
+                    android:id="@+id/addMemberBloodGSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dialog"
+                    android:background="@drawable/box_shape"
+                    style="@style/Base.Widget.AppCompat.ListView.DropDown"/>
+
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:contentDescription="TODO"/>
+            </FrameLayout>
+
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father Name"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="7dp"/>
+
+            <EditText
+                android:id="@+id/cnic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CNIC"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_keyboard_black_24dp"
+                android:drawablePadding="7dp"/>
+
+
+            <EditText
+                android:id="@+id/designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Designation"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_bookmark_black_24dp"
+                android:drawablePadding="7dp"/>
+
+
+            <EditText
+                android:id="@+id/department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Department"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_business_black_24dp"
+                android:drawablePadding="7dp"/>
+
+
+            <EditText
+                android:id="@+id/section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Section"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_image_aspect_ratio_black_24dp"
+                android:drawablePadding="7dp"/>
+
+            <EditText
+                android:id="@+id/postalAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal Address"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+                android:drawablePadding="7dp"/>
+
+            <!--<EditText
+                android:id="@+id/TextView022"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal Address"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="7dp"/>-->
+
+
+            <EditText
+                android:id="@+id/ice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ICE Number"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_dock_black_24dp"
+                android:drawablePadding="7dp"/>
+
+
+
+            <EditText
+                android:id="@+id/ref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reference"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_rate_review_black_24dp"
+                android:drawablePadding="7dp"/>
+
+
+            <EditText
+                android:id="@+id/willpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Will Point"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_comment_black_24dp"
+                android:drawablePadding="7dp"/>
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reason"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_mode_comment_black_24dp"
+                android:drawablePadding="7dp"/>
+
+
+
+            <Button
+                android:id="@+id/addMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#ed1c24"
+                android:text="Add User"
+                android:textColor="#FFF"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-nearby-license-12.0.1">
+    <CLASSES>
+      <root url="file://E:/.gradle/caches/transforms-1/files-1.1/play-services-nearby-license-12.0.1.aar/62294997f75ed046ed8b67a194f98f5e/res" />
+      <root url="jar://E:/.gradle/caches/transforms-1/files-1.1/play-services-nearby-license-12.0.1.aar/62294997f75ed046ed8b67a194f98f5e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

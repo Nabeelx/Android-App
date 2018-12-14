@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-wearable-license-12.0.1">
+    <CLASSES>
+      <root url="file://E:/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.1.aar/f4034a2dbe23a2e4d55cc9d8acdc6afc/res" />
+      <root url="jar://E:/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.1.aar/f4034a2dbe23a2e4d55cc9d8acdc6afc/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
